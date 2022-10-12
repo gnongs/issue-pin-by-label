@@ -32,9 +32,9 @@ async function pinIssue (tools, id, labeled = true) {
 // Run your GitHub Action!
 Toolkit.run(async tools => {
   const action = tools.context.payload.action
-  if (action.indexOf("labeled") === -1) {
-    tools.exit.neutral("Just checking for recent labels")
-  }
+  //if (action.indexOf("labeled") === -1) {
+  //  tools.exit.neutral("Just checking for recent labels")
+  //}
 
   if (!label) {
     tools.exit.neutral("Please set up a LABEL_NAME environment variable in the main.workflow file")
